@@ -14,7 +14,13 @@ body {
     line-height: 1.2;
     letter-spacing: 2px;
 }
-
+@media only screen and (max-width: 600px) {
+    body {
+      font-size: 12px;
+      line-height: normal;
+      letter-spacing: normal;
+    }
+  }
 
 * {
     box-sizing: border-box;
@@ -69,10 +75,10 @@ max-height: 100%;
 
 .toolbar {
     background-color: rgba(255, 255, 255, 0.75);
-    height: 50px;
+    height: 60px;
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: right; 
     padding: 0 15px; /* Updated padding */
     z-index: 2;
     position: fixed;
@@ -80,7 +86,11 @@ max-height: 100%;
     width: 100%; /* Adjusted width to accommodate the logo on the left */
     font-family: Tunes;
 }
-
+@media only screen and (max-width: 600px) {
+    .logo {
+      display: none;
+    }
+  }
 .tab button {
     background-color: transparent;
     color: #5f5e5e;
@@ -102,10 +112,10 @@ max-height: 100%;
 
 
 .logo{
-    height: 90px;
+    height: 150px;
     width: auto;
     position: fixed;
-    margin-top: -20px;
+    margin-top: -45px;
     top: 0;
 }
 
